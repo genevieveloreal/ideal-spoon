@@ -27,13 +27,37 @@ h2 {
 
 .logo img {
     width: 150px;
+}
 
+.h-100 {
+   
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.header {
+    background-color: rgba(255,255,255,0.7);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 #title {
-    background-image: url('background.jpg');
-    background-size: cover;
-    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
