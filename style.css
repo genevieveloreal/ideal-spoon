@@ -9,16 +9,18 @@ a {
 }
 
 h1 {
-    color: white;
+    color: pink;
     text-transform: uppercase;
     font-size: 4em;
     letter-spacing: 0.1em;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 2em;
+    text-align: center;
 }
 
 .logo {
@@ -48,6 +50,16 @@ h2 {
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 10;
+}
+
+.h1-box {
+    background-color: white;
+    border: 8px dashed pink;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -64,7 +76,8 @@ h2 {
 }
 
 #menu {
-    background-color: gainsboro;
+    color: purple;
+    background-color: lavenderblush;
     background-repeat: repeat;
     height: 500px;
     display: flex;
@@ -102,6 +115,7 @@ h2 {
     width: 100%;
     height: 400px;
     position: relative;
+    z-index: -1;
 }
 
 .map-content {
@@ -119,7 +133,7 @@ h2 {
 }
 
 #contact {
-    background-color: ;
+    background-color: pink;
     height: 500px;
     display: flex;
     flex-flow: column;
