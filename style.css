@@ -77,7 +77,7 @@ h2 {
 
 #menu {
     color: purple;
-    background-color: lavenderblush;
+    background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
     background-repeat: repeat;
     height: 500px;
     display: flex;
@@ -133,7 +133,9 @@ h2 {
 }
 
 #contact {
-    background-color: pink;
+    background-color: lavenderblush;
+    background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
+    background-repeat: repeat;
     height: 500px;
     display: flex;
     flex-flow: column;
