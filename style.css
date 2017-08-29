@@ -1,3 +1,4 @@
+/*General Styles*/
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.5;
@@ -23,6 +24,8 @@ h2 {
     text-align: center;
 }
 
+
+/*Nav Styles*/
 .logo {
     padding: 10px;
 }
@@ -31,10 +34,7 @@ h2 {
     width: 150px;
 }
 
-.h-100 {
-   
-}
-
+/*Masthead Styles*/
 .masthead {
     height: 100vh;
     min-height: 775px;
@@ -75,6 +75,7 @@ h2 {
     justify-content: center;
 }
 
+/*Menu Styles*/
 #menu {
     color: purple;
     background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
@@ -93,6 +94,7 @@ h2 {
     font-size: 1em;
 }
 
+/*About Styles*/
 #about {
     height: 500px;
     display: flex;
@@ -107,10 +109,12 @@ h2 {
     display: inline;
 }
 
+/*Visit Styles*/
 #visit {
     width: 100%;
 }
 
+/*Google Map Styles*/
 .map-frame {
     width: 100%;
     height: 400px;
@@ -132,6 +136,7 @@ h2 {
     font-size: 36px;
 }
 
+/*Contact Styles*/
 #contact {
     background-color: lavenderblush;
     background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
@@ -148,6 +153,7 @@ h2 {
     text-align: center;
 }
 
+/*Footer Styles*/
 #footer {
     text-transform: uppercase;
     letter-spacing: 0.1em;
