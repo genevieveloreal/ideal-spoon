@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: #e81c4f;
+  color: turquoise;
 }
 
 h1 {
@@ -24,14 +24,62 @@ h2 {
     text-align: center;
 }
 
+.clearfix {
+  overflow: auto;
+}
 
 /*Nav Styles*/
+.header {
+    background-color: rgba(255,255,255,1);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+}
+
 .logo {
     padding: 10px;
+    float: left;
 }
 
 .logo img {
     width: 150px;
+}
+
+.navigation {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.navigation a {
+    color: pink;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.nav-link:hover {
+    color: deeppink;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    padding: 14px 16px;
+    color: 
+}
+
+ul {
+    -webkit-padding-start: 0px;
 }
 
 /*Masthead Styles*/
@@ -43,14 +91,6 @@ h2 {
     background-image: url('background2.jpg');
     background-size: cover;
     display: flex;
-}
-
-.header {
-    background-color: rgba(255,255,255,0.7);
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
 }
 
 .h1-box {
@@ -77,7 +117,7 @@ h2 {
 
 /*Menu Styles*/
 #menu {
-    color: purple;
+    color: #696969;
     background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
     background-repeat: repeat;
     height: 500px;
@@ -88,10 +128,28 @@ h2 {
     text-align: center;
 }
 
+.menu-box {
+    background-color: white;
+    width: 50%;
+    min-width: 400px;
+    padding: 10px;
+}
+
+.menu-list {
+    line-height: 2em;
+    font-size: 1.3em;
+}
+
 .menu-items {
     list-style: none;
     line-height: 2em;
-    font-size: 1em;
+    font-size: 1.3em;
+    margin: 0 auto;
+    text-align: center!important; 
+}
+
+.grey {
+    color: #696969;
 }
 
 /*About Styles*/
@@ -107,6 +165,7 @@ h2 {
 .about-col {
     width: 50%;
     display: inline;
+    font-size: 1.3em;
 }
 
 /*Visit Styles*/
@@ -125,8 +184,9 @@ h2 {
 .map-content {
     z-index: 10;
     position: absolute;
+    float: right;
+    left: 200px;
     top: 50px;
-    left: 50px;
     padding: 10px;
     width: auto;
     background-color: rgba(255,255,255,0.8);
