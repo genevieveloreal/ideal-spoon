@@ -1,6 +1,14 @@
 /*General Styles*/
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
 body {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     line-height: 1.5;
     background-color: #fbf7f1;
 }
@@ -117,7 +125,7 @@ ul {
 }
 
 /*Masthead Styles*/
-.masthead {
+#masthead {
     height: 100vh;
     min-height: 775px;
     padding-top: 0;
@@ -141,6 +149,7 @@ ul {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 #title {
@@ -154,7 +163,7 @@ ul {
     color: #696969;
     background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
     background-repeat: repeat;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -168,6 +177,7 @@ ul {
     width: 50%;
     min-width: 400px;
     padding: 10px;
+    margin: 35px 0px;
 }
 
 .menu-list {
@@ -189,11 +199,15 @@ ul {
 
 /*About Styles*/
 #about {
-    height: 500px;
+    height: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    
+}
+
+.about-contact {
     text-align: center;
 }
 
@@ -233,12 +247,32 @@ ul {
 }
 
 /*Contact Styles*/
+
+input {
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 0px;
+    width: 300px;
+}
+
+.form-field-sets {
+    width: 300px;
+}
+
 #contact {
     color: #696969;
     background-color: lavenderblush;
     background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
     background-repeat: repeat;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
