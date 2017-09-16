@@ -96,7 +96,11 @@ a:-webkit-any-link {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media screen and (min-width:320px) and (max-width:640px) {
+  #masthead {
+      background-size: contain;
+  }
+
   .navigation a {display: none;}
   .navigation a.icon {
     float: right;
@@ -107,6 +111,10 @@ a:-webkit-any-link {
 
   .h1-box {
       width: 100%;
+  }
+
+  .about-col {
+      min-width: 90%;
   }
 }
 
@@ -187,7 +195,6 @@ ul {
 
 .menu-list {
     line-height: 2em;
-    font-size: 1.3em;
 }
 
 .menu-items {
