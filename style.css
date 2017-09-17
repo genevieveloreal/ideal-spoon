@@ -191,14 +191,27 @@ ul {
     text-align: center!important; 
 }
 
+#desserts {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0;
+    font-size: 0;
+    width: 100%;
+}
+
 .desserts-container {
-    margin: auto 0;
+    min-width: 100%;
 }
 
 .desserts-gallery {
-    width: 24.5%;
+    width: 25%;
     padding: 0px;
     margin: 0px;
+    color: blue;
+}
+
+.test {
+    min-width: 100%;
 }
 
 .grey {
@@ -213,6 +226,16 @@ ul {
     justify-content: center;
     align-items: center;
     margin: 20px 0px;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-contact {
@@ -354,6 +377,6 @@ fieldset {
 
 @media screen and (max-width:800px) {
     .desserts-gallery {
-        width: 49%;
+        width: 50%;
     }
 }
