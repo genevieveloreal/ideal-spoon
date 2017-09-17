@@ -13,7 +13,8 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;
+    Overflow-x is breaking scroll script.js*/
 }
 
 body {
@@ -116,7 +117,6 @@ li {
 
 li a {
     padding: 14px 16px;
-    color: 
 }
 
 ul {
@@ -130,7 +130,8 @@ ul {
     padding-top: 0;
     padding-bottom: 0;
     /*background-image: url('background2.jpg');*/
-    background-image: url('cupcakes.jpg');
+    /*background-image: url('cupcakes.jpg');*/
+    background-image: url('test-bg.jpg');
     background-size: cover;
     display: flex;
 }
@@ -226,7 +227,7 @@ ul {
     justify-content: center;
     align-items: center;
     margin: 20px 0px;
-    background-color: #fff;
+    background-color: #fbf7f1;
 }
 
 .about-container {
@@ -306,7 +307,8 @@ fieldset {
 #contact {
     color: #696969;
     background-color: lavenderblush;
-    background-image: url('background2.jpg');
+    /*background-image: url('background2.jpg');*/
+    background-image: url('cupcakes.jpg');
     background-position: center;
     background-size: cover;
     /*background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);*/
@@ -347,7 +349,7 @@ fieldset {
     }
 
     .logo img {
-        width: 60px;
+        display: none;
     }
 
     .navigation a {
@@ -379,4 +381,45 @@ fieldset {
     .desserts-gallery {
         width: 50%;
     }
+}
+
+/*Nav styles*/
+
+.header .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header a:not(:first-child) {display: none;}
+    .header a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header.responsive {
+        position: relative;
+        background-color: white;
+    }
+
+    .header.responsive .icon {
+        position: absolute;
+    }
+    .header.responsive a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        height: 50px;
+        float:left;
+        clear:left
+    }
+
+    .navigation {
+        float: none;
+        overflow: visible;
+        display: block;
+        background-color: white;
+    }
+
 }
