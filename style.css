@@ -107,6 +107,7 @@ a:-webkit-any-link {
 /* Hide the link that should open and close the topnav on small screens */
 .navigation .icon {
     display: none;
+    color: pink;
 }
 
 li {
@@ -160,8 +161,8 @@ ul {
 /*Menu Styles*/
 #menu {
     color: #696969;
-    background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
-    background-repeat: repeat;
+    /*background-image: url('background2.png'), linear-gradient(to left,#FFC0CB,#FFF0F5);
+    background-repeat: repeat;*/
     height: auto;
     display: flex;
     flex-flow: column;
@@ -174,7 +175,6 @@ ul {
 .menu-box {
     background-color: white;
     width: 50%;
-    min-width: 400px;
     padding: 10px;
     margin: 35px 0px;
 }
@@ -187,8 +187,18 @@ ul {
     list-style: none;
     line-height: 2em;
     font-size: 1.3em;
-    margin: 0 auto;
+    margin: auto 0;
     text-align: center!important; 
+}
+
+.desserts-container {
+    margin: auto 0;
+}
+
+.desserts-gallery {
+    width: 24.5%;
+    padding: 0px;
+    margin: 0px;
 }
 
 .grey {
@@ -207,12 +217,17 @@ ul {
 
 .about-contact {
     text-align: center;
+    font-weight: 700;
 }
 
 .about-col {
     width: 50%;
     display: inline;
     font-size: 1.3em;
+}
+
+.justify {
+    text-align: justify;
 }
 
 /*Visit Styles*/
@@ -281,6 +296,10 @@ fieldset {
     text-align: center;
 }
 
+.contact-msg {
+    font-size: 1.3em;
+}
+
 .copyright {
     text-align: center;
 }
@@ -297,7 +316,7 @@ fieldset {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width:640px) {
     #masthead {
-        background-size: cover;
+
     }
 
     body {
@@ -308,20 +327,33 @@ fieldset {
         width: 60px;
     }
 
-    .navigation a {display: none;}
+    .navigation a {
+        display: none;
+    }
+
     .navigation a.icon {
         float: right;
-        border: 1px solid red;
         display: inline-block;
         clear: both;
     }
 
-    .h1-box {
-        width: 100%;
-        overflow: visible;
+    .about-col {
+        width: 80%;
     }
 
-    .about-col {
-        min-width: 90%;
+    .menu-box {
+        width: 85%;
+    }
+
+    .menu-list {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .desserts-gallery {
+        width: 49%;
     }
 }
