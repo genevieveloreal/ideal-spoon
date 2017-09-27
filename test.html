@@ -24,7 +24,16 @@
 <body>
 <!--Main Content-->
 <!-- HEADER -->
+<nav>
+<div id="nav-id">
+<a href="#" id="test">Hello Mohd</a>
 
+<div id="hide">
+    <p>Hii All<p></p>Hw r u</p>
+    <p><a href="#">Sign Out</a></p>
+</div>
+</div>
+</nav>
 
 <div id="masthead">
     <div class="container h-100">
@@ -127,17 +136,37 @@
 </section>
 <!--End Main Content-->
 
-
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "header") {
-            x.className += " responsive";
-        } else {
-            x.className = "header";
-        }
-    }
-</script>
+document.getElementById('test').onclick = showDropDown;
+
+function showDropDown(e){
+     document.getElementById('test').onclick = function(){};
+     if(e.stopPropagation)
+         e.stopPropagation();   // W3C model
+     else
+         e.cancelBubble = true; // IE model
+
+     document.getElementById("hide").style.display = "block";
+     document.onclick = function(e){
+         var ele = document.elementFromPoint(e.clientX, e.clientY);
+         if(ele == document.getElementById("test")){
+             hideDropDown();
+             return;
+         }
+         do{
+             if(ele == document.getElementById("hide"))
+                 return;
+         }while(ele = ele.parentNode);
+         hideDropDown();
+     };
+}
+
+function hideDropDown(){
+    document.onclick = function(){};
+    document.getElementById("hide").style.display = "none";
+    document.getElementById('test').onclick = showDropDown;
+}
+    </script>
 
 <script src="script.js"></script>
 </body>
